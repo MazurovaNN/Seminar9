@@ -1,18 +1,17 @@
-﻿Console.WriteLine("Введите 3 числа:");
+﻿Console.WriteLine("Введите число:");
 
-int num1 = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 
-int num2 = Convert.ToInt32(Console.ReadLine());
-
-int num3 = Convert.ToInt32(Console.ReadLine());
-
-int max = num1;
-if (num2 > max)
+if (n % 2 == 1)
 {
-max = num2;
+
+Console.WriteLine("Число " + n + " является: НЕЧЁТНЫМ");
 }
-if (num3 > max)
+
+else
+
 {
-max = num3;
+
+Console.WriteLine("Число " + n + "является: ЧЁТНЫМ");
+
 }
-Console.WriteLine("Наибольшее из введённых чисел -> " + max);

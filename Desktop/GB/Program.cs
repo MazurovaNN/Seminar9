@@ -1,17 +1,41 @@
-﻿Console.WriteLine("Введите число:");
+﻿int i = 1;
 
-int n = Convert.ToInt32(Console.ReadLine());
+bool not = true;
 
-if (n % 2 == 1)
+
+
+Console.WriteLine("Введите число:");
+
+int num = Convert.ToInt32(Console.ReadLine());
+
+
+
+Console.WriteLine("Чётные числа от 1 до " + num);
+
+while (i <= num)
+
 {
 
-Console.WriteLine("Число " + n + " является: НЕЧЁТНЫМ");
+if (i % 2 != 1)
+{
+
+Console.Write(i + ", ");
+
+not = false;
+
 }
 
-else
+i++;
+
+}
+
+
+
+if (not)
 
 {
 
-Console.WriteLine("Число " + n + "является: ЧЁТНЫМ");
+Console.WriteLine("Нет чётных чисел!");
 
 }
+
